@@ -27,7 +27,7 @@ pipeline {
                 script {
                     sh '''
                     echo "Starting Appium Server"
-                    npx appium --base-path / &
+                    npx appium --base-path / --port 4725 &
                     '''
                 }
             }
