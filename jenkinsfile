@@ -2,13 +2,11 @@ pipeline {
     agent any
 
     environment {
-        NODE_VERSION = '18.7.0' 
         PATH = "/Users/waleibitoye/.nvm/versions/node/v18.7.0/bin:$PATH"
     }
 
-
     tools {
-        nodejs NODE_VERSION
+        nodejs '18.7.0'
     }
 
     stages {
