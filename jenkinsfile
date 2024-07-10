@@ -36,7 +36,7 @@ pipeline {
             }
         }
 
-        stage('Run Tests') {
+        stage('Run iOS Tests') {
             steps {
                 sh 'npx wdio run wdio.iOS.conf.js'
             }
