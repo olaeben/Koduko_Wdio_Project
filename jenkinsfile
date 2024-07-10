@@ -22,6 +22,17 @@ pipeline {
             }
         }
 
+        stage('Start Appium Server') {
+            steps {
+                script {
+                    sh '''
+                    echo "Starting Appium Server"
+                    npx appium --base-path /
+                    '''
+                }
+            }
+        }
+
         stage('Start iOS Simulator') {
             steps {
                 script {
