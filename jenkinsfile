@@ -6,6 +6,7 @@ pipeline {
         PATH = "/Users/waleibitoye/.nvm/versions/node/v18.7.0/bin:$PATH"
     }
 
+
     tools {
         nodejs NODE_VERSION
     }
@@ -27,7 +28,7 @@ pipeline {
             steps {
                 script {
                     sh '''
-                    echo "Starting iOS simulator"
+                    echo "Starting iOS Simulator"
                     xcrun simctl boot "iPhone 15 Plus"
                     open -a Simulator
                     '''
