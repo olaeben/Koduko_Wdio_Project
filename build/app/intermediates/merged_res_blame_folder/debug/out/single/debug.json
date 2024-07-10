@@ -1,0 +1,66 @@
+[
+    {
+        "merged": "com.example.koduko.app-merged_res-35:/mipmap-xhdpi_launcher_icon.png.flat",
+        "source": "com.example.koduko.app-main-29:/mipmap-xhdpi/launcher_icon.png"
+    },
+    {
+        "merged": "com.example.koduko.app-merged_res-35:/mipmap-xxhdpi_launcher_icon.png.flat",
+        "source": "com.example.koduko.app-main-29:/mipmap-xxhdpi/launcher_icon.png"
+    },
+    {
+        "merged": "com.example.koduko.app-merged_res-35:/drawable_app_icon.png.flat",
+        "source": "com.example.koduko.app-main-29:/drawable/app_icon.png"
+    },
+    {
+        "merged": "com.example.koduko.app-merged_res-35:/drawable-xhdpi_app_icon.png.flat",
+        "source": "com.example.koduko.app-main-29:/drawable-xhdpi/app_icon.png"
+    },
+    {
+        "merged": "com.example.koduko.app-merged_res-35:/drawable-hdpi-v11_ic_stat_icon.png.flat",
+        "source": "com.example.koduko.app-main-29:/drawable-hdpi-v11/ic_stat_icon.png"
+    },
+    {
+        "merged": "com.example.koduko.app-merged_res-35:/drawable-v21_launch_background.xml.flat",
+        "source": "com.example.koduko.app-main-29:/drawable-v21/launch_background.xml"
+    },
+    {
+        "merged": "com.example.koduko.app-merged_res-35:/mipmap-xxxhdpi_launcher_icon.png.flat",
+        "source": "com.example.koduko.app-main-29:/mipmap-xxxhdpi/launcher_icon.png"
+    },
+    {
+        "merged": "com.example.koduko.app-merged_res-35:/drawable-xxhdpi_app_icon.png.flat",
+        "source": "com.example.koduko.app-main-29:/drawable-xxhdpi/app_icon.png"
+    },
+    {
+        "merged": "com.example.koduko.app-merged_res-35:/drawable-xxxhdpi_app_icon.png.flat",
+        "source": "com.example.koduko.app-main-29:/drawable-xxxhdpi/app_icon.png"
+    },
+    {
+        "merged": "com.example.koduko.app-merged_res-35:/mipmap-hdpi_launcher_icon.png.flat",
+        "source": "com.example.koduko.app-main-29:/mipmap-hdpi/launcher_icon.png"
+    },
+    {
+        "merged": "com.example.koduko.app-merged_res-35:/drawable-xxhdpi-v11_ic_stat_icon.png.flat",
+        "source": "com.example.koduko.app-main-29:/drawable-xxhdpi-v11/ic_stat_icon.png"
+    },
+    {
+        "merged": "com.example.koduko.app-merged_res-35:/drawable-hdpi_app_icon.png.flat",
+        "source": "com.example.koduko.app-main-29:/drawable-hdpi/app_icon.png"
+    },
+    {
+        "merged": "com.example.koduko.app-merged_res-35:/mipmap-mdpi_launcher_icon.png.flat",
+        "source": "com.example.koduko.app-main-29:/mipmap-mdpi/launcher_icon.png"
+    },
+    {
+        "merged": "com.example.koduko.app-merged_res-35:/drawable-xhdpi-v11_ic_stat_icon.png.flat",
+        "source": "com.example.koduko.app-main-29:/drawable-xhdpi-v11/ic_stat_icon.png"
+    },
+    {
+        "merged": "com.example.koduko.app-merged_res-35:/drawable-mdpi_app_icon.png.flat",
+        "source": "com.example.koduko.app-main-29:/drawable-mdpi/app_icon.png"
+    },
+    {
+        "merged": "com.example.koduko.app-merged_res-35:/drawable-mdpi-v11_ic_stat_icon.png.flat",
+        "source": "com.example.koduko.app-main-29:/drawable-mdpi-v11/ic_stat_icon.png"
+    }
+]

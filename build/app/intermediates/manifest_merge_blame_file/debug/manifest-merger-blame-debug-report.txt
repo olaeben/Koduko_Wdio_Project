@@ -1,0 +1,121 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.koduko"
+4    android:versionCode="4"
+5    android:versionName="1.0.2" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="34" />
+10    <!--
+11         The INTERNET permission is required for development. Specifically,
+12         the Flutter tool needs it to communicate with the running application
+13         to allow setting breakpoints, to provide hot reload, etc.
+14    -->
+15    <uses-permission android:name="android.permission.INTERNET" />
+15-->/Users/waleibitoye/Downloads/sdm/KodukoApp/koduko/android/app/src/debug/AndroidManifest.xml:7:5-66
+15-->/Users/waleibitoye/Downloads/sdm/KodukoApp/koduko/android/app/src/debug/AndroidManifest.xml:7:22-64
+16    <uses-permission android:name="android.permission.VIBRATE" />
+16-->[:flutter_local_notifications] /Users/waleibitoye/Downloads/sdm/KodukoApp/koduko/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-66
+16-->[:flutter_local_notifications] /Users/waleibitoye/Downloads/sdm/KodukoApp/koduko/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:9:22-63
+17    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+17-->[:flutter_local_notifications] /Users/waleibitoye/Downloads/sdm/KodukoApp/koduko/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-77
+17-->[:flutter_local_notifications] /Users/waleibitoye/Downloads/sdm/KodukoApp/koduko/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:10:22-74
+18
+19    <permission
+19-->[androidx.core:core:1.10.1] /Users/waleibitoye/.gradle/caches/transforms-3/9dc89ed0d932357e00deb0c10f707031/transformed/core-1.10.1/AndroidManifest.xml:22:5-24:47
+20        android:name="com.example.koduko.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+20-->[androidx.core:core:1.10.1] /Users/waleibitoye/.gradle/caches/transforms-3/9dc89ed0d932357e00deb0c10f707031/transformed/core-1.10.1/AndroidManifest.xml:23:9-81
+21        android:protectionLevel="signature" />
+21-->[androidx.core:core:1.10.1] /Users/waleibitoye/.gradle/caches/transforms-3/9dc89ed0d932357e00deb0c10f707031/transformed/core-1.10.1/AndroidManifest.xml:24:9-44
+22
+23    <uses-permission android:name="com.example.koduko.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+23-->[androidx.core:core:1.10.1] /Users/waleibitoye/.gradle/caches/transforms-3/9dc89ed0d932357e00deb0c10f707031/transformed/core-1.10.1/AndroidManifest.xml:26:5-97
+23-->[androidx.core:core:1.10.1] /Users/waleibitoye/.gradle/caches/transforms-3/9dc89ed0d932357e00deb0c10f707031/transformed/core-1.10.1/AndroidManifest.xml:26:22-94
+24
+25    <application
+26        android:name="android.app.Application"
+27        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+27-->[androidx.core:core:1.10.1] /Users/waleibitoye/.gradle/caches/transforms-3/9dc89ed0d932357e00deb0c10f707031/transformed/core-1.10.1/AndroidManifest.xml:28:18-86
+28        android:debuggable="true"
+29        android:icon="@mipmap/launcher_icon"
+30        android:label="koduko" >
+31        <activity
+32            android:name="com.example.koduko.MainActivity"
+33            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+34            android:exported="true"
+35            android:hardwareAccelerated="true"
+36            android:launchMode="singleTop"
+37            android:theme="@style/LaunchTheme"
+38            android:windowSoftInputMode="adjustResize" >
+39
+40            <!--
+41                 Specifies an Android theme to apply to this Activity as soon as
+42                 the Android process has started. This theme is visible to the user
+43                 while the Flutter UI initializes. After that, this theme continues
+44                 to determine the Window background behind the Flutter UI.
+45            -->
+46            <meta-data
+47                android:name="io.flutter.embedding.android.NormalTheme"
+48                android:resource="@style/NormalTheme" />
+49
+50            <intent-filter>
+51                <action android:name="android.intent.action.MAIN" />
+52
+53                <category android:name="android.intent.category.LAUNCHER" />
+54            </intent-filter>
+55        </activity>
+56        <!--
+57             Don't delete the meta-data below.
+58             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+59        -->
+60        <meta-data
+61            android:name="flutterEmbedding"
+62            android:value="2" />
+63
+64        <activity
+64-->[:url_launcher_android] /Users/waleibitoye/Downloads/sdm/KodukoApp/koduko/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-13:74
+65            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+65-->[:url_launcher_android] /Users/waleibitoye/Downloads/sdm/KodukoApp/koduko/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-74
+66            android:exported="false"
+66-->[:url_launcher_android] /Users/waleibitoye/Downloads/sdm/KodukoApp/koduko/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-37
+67            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+67-->[:url_launcher_android] /Users/waleibitoye/Downloads/sdm/KodukoApp/koduko/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-71
+68
+69        <uses-library
+69-->[androidx.window:window:1.0.0-beta04] /Users/waleibitoye/.gradle/caches/transforms-3/184cc61bd9e661e6db0fa8cc58c6ef3a/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+70            android:name="androidx.window.extensions"
+70-->[androidx.window:window:1.0.0-beta04] /Users/waleibitoye/.gradle/caches/transforms-3/184cc61bd9e661e6db0fa8cc58c6ef3a/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+71            android:required="false" />
+71-->[androidx.window:window:1.0.0-beta04] /Users/waleibitoye/.gradle/caches/transforms-3/184cc61bd9e661e6db0fa8cc58c6ef3a/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+72        <uses-library
+72-->[androidx.window:window:1.0.0-beta04] /Users/waleibitoye/.gradle/caches/transforms-3/184cc61bd9e661e6db0fa8cc58c6ef3a/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+73            android:name="androidx.window.sidecar"
+73-->[androidx.window:window:1.0.0-beta04] /Users/waleibitoye/.gradle/caches/transforms-3/184cc61bd9e661e6db0fa8cc58c6ef3a/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+74            android:required="false" />
+74-->[androidx.window:window:1.0.0-beta04] /Users/waleibitoye/.gradle/caches/transforms-3/184cc61bd9e661e6db0fa8cc58c6ef3a/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+75
+76        <provider
+76-->[androidx.emoji2:emoji2:1.2.0] /Users/waleibitoye/.gradle/caches/transforms-3/e5443d532f792b0a97d24889aba9fd4a/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+77            android:name="androidx.startup.InitializationProvider"
+77-->[androidx.emoji2:emoji2:1.2.0] /Users/waleibitoye/.gradle/caches/transforms-3/e5443d532f792b0a97d24889aba9fd4a/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:25:13-67
+78            android:authorities="com.example.koduko.androidx-startup"
+78-->[androidx.emoji2:emoji2:1.2.0] /Users/waleibitoye/.gradle/caches/transforms-3/e5443d532f792b0a97d24889aba9fd4a/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:26:13-68
+79            android:exported="false" >
+79-->[androidx.emoji2:emoji2:1.2.0] /Users/waleibitoye/.gradle/caches/transforms-3/e5443d532f792b0a97d24889aba9fd4a/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:27:13-37
+80            <meta-data
+80-->[androidx.emoji2:emoji2:1.2.0] /Users/waleibitoye/.gradle/caches/transforms-3/e5443d532f792b0a97d24889aba9fd4a/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+81                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+81-->[androidx.emoji2:emoji2:1.2.0] /Users/waleibitoye/.gradle/caches/transforms-3/e5443d532f792b0a97d24889aba9fd4a/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:30:17-75
+82                android:value="androidx.startup" />
+82-->[androidx.emoji2:emoji2:1.2.0] /Users/waleibitoye/.gradle/caches/transforms-3/e5443d532f792b0a97d24889aba9fd4a/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:31:17-49
+83            <meta-data
+83-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/waleibitoye/.gradle/caches/transforms-3/cbeb0087ee0cad95c306aa96fbddb11c/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
+84                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+84-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/waleibitoye/.gradle/caches/transforms-3/cbeb0087ee0cad95c306aa96fbddb11c/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
+85                android:value="androidx.startup" />
+85-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/waleibitoye/.gradle/caches/transforms-3/cbeb0087ee0cad95c306aa96fbddb11c/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
+86        </provider>
+87    </application>
+88
+89</manifest>
