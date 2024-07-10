@@ -12,7 +12,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/olaeben/Koduko_Wdio_Project.git'
+                git branch: 'main', url: 'https://github.com/olaeben/Koduko_Wdio_Project.git'
             }
         }
 
