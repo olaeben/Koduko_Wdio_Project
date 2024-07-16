@@ -1,8 +1,13 @@
 pipeline {
     agent any
 
+    parameters {
+        choice(name: 'PLATFORM', choices: ['iOS', 'Android'], description: 'Select the platform to run tests on')
+    }
+
     environment {
-        PATH = "/Users/waleibitoye/.nvm/versions/node/v18.7.0/bin:$PATH"
+        PATH = "/Users/waleibitoye/.nvm/versions/node/v18.7.0/bin:/$ANDROID_HOME/emulator:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools:$PATH"
+        ANDROID_HOME = "/Users/waleibitoye/Library/Android/sdk"  
     }
 
     tools {
@@ -12,7 +17,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/olaeben/Koduko_Wdio_Project.git'
+                git branch: 'parameterSetup', url: 'https://github.com/olaeben/Koduko_Wdio_Project.git'
             }
         }
 
@@ -33,21 +38,34 @@ pipeline {
             }
         }
 
-        stage('Start iOS Simulator') {
+        stage('Start Emulator or Simulator') {
             steps {
                 script {
-                    sh '''
-                    echo "Starting iOS Simulator"
-                    xcrun simctl boot "iPhone 15 Plus"
-                    open -a Simulator
-                    '''
+                    if (params.PLATFORM == 'iOS') {
+                        sh '''
+                        echo "Starting iOS Simulator"
+                        xcrun simctl boot "iPhone 15 Plus"
+                        open -a Simulator
+                        '''
+                    } else if (params.PLATFORM == 'Android') {
+                        sh '''
+                        echo "Starting Android Emulator"
+                        nohup $ANDROID_HOME/emulator/emulator -avd emulator-5554 -no-audio -no-window &
+                        '''
+                    }
                 }
             }
         }
 
-        stage('Run iOS Tests') {
+        stage('Run Tests') {
             steps {
-                sh 'npx wdio run wdio.iOS.conf.js'
+                script {
+                    if (params.PLATFORM == 'iOS') {
+                        sh 'npx wdio run wdio.iOS.conf.js'
+                    } else if (params.PLATFORM == 'Android') {
+                        sh 'npx wdio run wdio.android.conf.js'
+                    }
+                }
             }
         }
 
@@ -72,7 +90,8 @@ pipeline {
 
     post {
         always {
-            sh 'xcrun simctl shutdown all'  
+            sh 'xcrun simctl shutdown all || true'
+            sh 'adb -s emulator-5554 emu kill || true'
         }
     }
 }
