@@ -55,7 +55,7 @@ exports.config = {
         // capabilities for local Appium web tests on an Android Emulator
         platformName: 'Android',
         'appium:deviceName': 'emulator-5554',
-        'appium:platformVersion': '14.0',
+        'appium:platformVersion': '15.0',
         'appium:automationName': 'Flutter',
         'appium:Reset': false,
         'appium:app': 'build/app/outputs/flutter-apk/app-debug.apk'
