@@ -6,9 +6,8 @@ pipeline {
     }
 
     environment {
-        PATH = "/Users/waleibitoye/.nvm/versions/node/v18.7.0/bin:$PATH"
+        PATH = "/Users/waleibitoye/.nvm/versions/node/v18.7.0/bin:/$ANDROID_HOME/emulator:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools:$PATH"
         ANDROID_HOME = "/Users/waleibitoye/Library/Android/sdk"  
-        PATH = "$ANDROID_HOME/emulator:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools:$PATH"
     }
 
     tools {
